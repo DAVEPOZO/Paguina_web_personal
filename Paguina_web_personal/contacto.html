@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contacto - Estilo Único</title>
+  <link rel="stylesheet" href="contacto.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Contacto</h1>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="catalogo.html">Catálogo</a>
+      <a href="contacto.html" class="active">Contacto</a>
+      <a href="acerca.html">Acerca de</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="formulario-contacto">
+      <h2>Déjanos un mensaje</h2>
+      <form id="form-contacto" novalidate>
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" placeholder="Tu nombre" required />
+
+        <label for="correo">Correo electrónico</label>
+        <input type="email" id="correo" placeholder="Tu correo" required />
+
+        <label for="telefono">Teléfono</label>
+        <input type="tel" id="telefono" placeholder="Tu teléfono" />
+
+        <label for="asunto">Asunto</label>
+        <input type="text" id="asunto" placeholder="Asunto del mensaje" required />
+
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" placeholder="Escribe tu mensaje aquí..." required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+      <p id="respuesta"></p>
+    </section>
+
+    <section class="info-contacto">
+      <h2>Información de Contacto</h2>
+      <p><strong>Teléfono:</strong> +52 55 1234 5678</p>
+      <p><strong>Email:</strong> contacto@estilounico.com</p>
+      <p><strong>Dirección:</strong>Calle Rosa Ada Guerrero, Barrio Union y Progreso</p>
+
+      <div class="redes-sociales">
+        <h3>Síguenos</h3>
+        <a href="#" aria-label="Instagram">Instagram</a> |
+        <a href="#" aria-label="Facebook">Facebook</a> |
+        <a href="#" aria-label="Twitter">Twitter</a>
+      </div>
+    </section>
+
+    <section class="mapa">
+      <h2>Ubicación</h2>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22787.6395934596!2d-80.7253840589248!3d-1.9437766648876038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902dd74a91e0eaff%3A0x54c26b1c7a6c0559!2sValdivia!5e0!3m2!1ses-419!2sec!4v1750618361029!5m2!1ses-419!2sec"
+        width="100%"
+        height="350"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Mapa de ubicación"
+      ></iframe>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Estilo Único</p>
+  </footer>
+</body>
+</html>
