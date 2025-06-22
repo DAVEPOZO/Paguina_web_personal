@@ -1,0 +1,240 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: #111;
+  color: #fff;
+  text-align: center;
+  padding: 2em 1em;
+}
+header h1 {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+}
+nav {
+  margin-top: 1em;
+}
+nav a {
+  color: #ffb347;
+  text-decoration: none;
+  margin: 0 1em;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+nav a:hover,
+nav a.active {
+  color: #fff;
+}
+
+/* Header */
+header {
+  background-color: #222;
+  color: #ffb347;
+  padding: 1.8em 1em;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+header h1 {
+  font-weight: 700;
+  font-size: 2.8em;
+  margin-bottom: 0.3em;
+}
+nav a {
+  color: #ffb347;
+  text-decoration: none;
+  margin: 0 1em;
+  font-weight: 600;
+  font-size: 1.1em;
+  transition: color 0.3s ease;
+}
+nav a:hover,
+nav a.active {
+  color: #fff;
+}
+/* Banner promocional */
+.banner-promocional {
+  background-color: #ffb347;
+  color: #111;
+  text-align: center;
+  padding: 1em 0;
+  font-weight: 700;
+  font-size: 1.2em;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+/* Introducción catálogo */
+.intro-catalogo {
+  max-width: 900px;
+  margin: 2em auto;
+  text-align: center;
+}
+.intro-catalogo h2 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+.intro-catalogo p {
+  font-size: 1.1em;
+  color: #555;
+}
+
+/* Buscador */
+.buscador {
+  max-width: 500px;
+  margin: 2em auto;
+  text-align: center;
+}
+.buscador input[type="text"] {
+  padding: 0.8em 1em;
+  width: 70%;
+  border: 2px solid #ccc;
+  border-radius: 30px 0 0 30px;
+  font-size: 1em;
+  outline: none;
+  transition: border-color 0.3s;
+}
+.buscador input[type="text"]:focus {
+  border-color: #ffb347;
+}
+.buscador button {
+  padding: 0.8em 1.5em;
+  border: none;
+  background-color: #ffb347;
+  color: #111;
+  font-weight: 700;
+  font-size: 1em;
+  border-radius: 0 30px 30px 0;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.buscador button:hover {
+  background-color: #e6952b;
+}
+
+/* Catálogo */
+.catalogo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2em;
+  padding: 0 2em 4em;
+}
+.producto {
+  background-color: #fff;
+  padding: 1.5em;
+  width: 220px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  position: relative;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.producto:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+.producto img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1em;
+}
+.producto h3 {
+  font-size: 1.2em;
+  margin: 0.5em 0;
+}
+.producto p {
+  color: #555;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+/* Etiquetas "Nuevo" y "Oferta" */
+.etiqueta {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  padding: 0.3em 0.7em;
+  font-size: 0.8em;
+  font-weight: 700;
+  border-radius: 15px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.nuevo .etiqueta {
+  background-color: #27ae60;
+}
+.oferta .etiqueta {
+  background-color: #e74c3c;
+}
+.producto p del {
+  color: #999;
+  margin-right: 0.5em;
+}
+
+/* Paginación */
+.paginacion {
+  text-align: center;
+  margin-bottom: 3em;
+}
+.paginacion button {
+  background-color: #ffb347;
+  border: none;
+  margin: 0 0.3em;
+  padding: 0.6em 1.2em;
+  font-weight: 700;
+  color: #111;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+.paginacion button:hover {
+  background-color: #e6952b;
+}
+.paginacion button.activo {
+  background-color: #111;
+  color: #ffb347;
+}
+
+/* Footer */
+footer {
+  background-color: #111;
+  color: #fff;
+  text-align: center;
+  padding: 2em 1em;
+  font-size: 0.9em;
+}
+footer a {
+  color: #ffb347;
+  text-decoration: none;
+  margin: 0 0.5em;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+footer a:hover {
+  color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .catalogo {
+    flex-direction: column;
+    align-items: center;
+  }
+  .producto {
+    width: 90%;
+  }
+  .buscador input[type="text"] {
+    width: 60%;
+  }
+}
